@@ -25,8 +25,8 @@ Today we will take a look at correlation as a measure of association between two
 ## Lectures
 The lecture material for this week is presented in two parts:
 
-1. [**Theory**](https://web.microsoftstream.com/video/6cff8539-a25a-43b7-9647-403f14539276)
-2. [**How to**](https://web.microsoftstream.com/video/974ed3d4-ec1c-45f4-b63a-a7ff86a8d12a)
+1. [**Theory**](https://web.microsoftstream.com/video/6cff8539-a25a-43b7-9647-403f14539276) Watch this part before you complete the reading and the pre-lab activities.
+2. [**How to**](https://web.microsoftstream.com/video/974ed3d4-ec1c-45f4-b63a-a7ff86a8d12a) Watch this part either after the 'Theory' part of after you've completed the pre-lab activities 1 to 3. Definitely watch it before you come to your lab session.
 
 ## Reading
 The reading that accompanies the lectures this week and next week is from [**the free textbook by Miller and Haden**](https://drive.google.com/file/d/0B1fyuTuvj3YoaFdUR3FZaXNuNXc/view).
