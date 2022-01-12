@@ -1,0 +1,13 @@
+intro
+analysis-labs-and-pre-lab-work
+week-11-correlation
+lectures
+reading
+pre-lab-activities
+pre-lab-activity-1-visualing-correlations
+pre-lab-activity-2-guess-the-correlation
+pre-lab-activity-3-anscombes-quartet
+pre-lab-activity-4-getting-ready-for-the-lab-class
+remind-yourself-of-the-basics-of-how-to-work-with-rstudio.
+create-a-folder-and-a-project-for-week-11.
+get-your-files-ready
