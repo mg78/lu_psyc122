@@ -71,7 +71,7 @@ You might want to re-watch some of the videos John and Tom provided in PSYC121:
 [Click here for the instructions](https://tombeesley.github.io/PSYC121_2021-22/week-6-visualising-data-and-binomial-tests.html#creating_project) from Week 6 of PSYC121 if you are unsure.
 
 #### Get your files ready
-Download the [week11_forStudents](files/week11/week11_forStudents) file and upload it into the new folder in RStudio Server you created at the previous step. If you need them, [here are the instructions](https://tombeesley.github.io/PSYC121_2021-22/week-2-descriptive-statistics-in-r-studio.html#uploading_zip) from Week 2 of PSYC121.
+Download the [122_week11_forStudents.zip](files/week11/122_week11_forStudents.zip) file and upload it into the new folder in RStudio Server you created at the previous step. If you need them, [here are the instructions](https://tombeesley.github.io/PSYC121_2021-22/week-2-descriptive-statistics-in-r-studio.html#uploading_zip) from Week 2 of PSYC121.
 
 ## Lab activities
 In this lab, you’ll gain understanding of and practice with:
