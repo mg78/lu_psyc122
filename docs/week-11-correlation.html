@@ -24,7 +24,7 @@
 <meta name="author" content="Margriet Groen and Rob Davies" />
 
 
-<meta name="date" content="2022-01-12" />
+<meta name="date" content="2022-01-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -70,7 +70,7 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">PSYC121 - Statistics for Psychologists I</a></li>
+<li><a href="./">PSYC122 - Statistics for Psychologists I</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Intro</a>
@@ -86,8 +86,15 @@
 <li class="chapter" data-level="2.3.1" data-path="week-11-correlation.html"><a href="week-11-correlation.html#pre-lab-activity-1-visualing-correlations"><i class="fa fa-check"></i><b>2.3.1</b> Pre-lab activity 1: Visualing correlations</a></li>
 <li class="chapter" data-level="2.3.2" data-path="week-11-correlation.html"><a href="week-11-correlation.html#pre-lab-activity-2-guess-the-correlation"><i class="fa fa-check"></i><b>2.3.2</b> Pre-lab activity 2: Guess the correlation</a></li>
 <li class="chapter" data-level="2.3.3" data-path="week-11-correlation.html"><a href="week-11-correlation.html#pre-lab-activity-3-anscombes-quartet"><i class="fa fa-check"></i><b>2.3.3</b> Pre-lab activity 3: Anscombe’s quartet</a></li>
-<li class="chapter" data-level="2.3.4" data-path="week-11-correlation.html"><a href="week-11-correlation.html#pre-lab-activity-4-getting-ready-for-the-lab-class"><i class="fa fa-check"></i><b>2.3.4</b> Pre-lab activity 4: Getting ready for the lab class</a></li>
+<li class="chapter" data-level="2.3.4" data-path="week-11-correlation.html"><a href="week-11-correlation.html#prelab_gettingReady"><i class="fa fa-check"></i><b>2.3.4</b> Pre-lab activity 4: Getting ready for the lab class</a></li>
 </ul></li>
+<li class="chapter" data-level="2.4" data-path="week-11-correlation.html"><a href="week-11-correlation.html#lab-activities"><i class="fa fa-check"></i><b>2.4</b> Lab activities</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="week-11-correlation.html"><a href="week-11-correlation.html#lab-activity-1-interpreting-correlation"><i class="fa fa-check"></i><b>2.4.1</b> Lab activity 1: Interpreting correlation</a></li>
+<li class="chapter" data-level="2.4.2" data-path="week-11-correlation.html"><a href="week-11-correlation.html#lab-activity-2-visualising-calculating-and-reporting-correlations"><i class="fa fa-check"></i><b>2.4.2</b> Lab activity 2: Visualising, calculating and reporting correlations</a></li>
+<li class="chapter" data-level="2.4.3" data-path="week-11-correlation.html"><a href="week-11-correlation.html#lab-activity-3-more-correlations"><i class="fa fa-check"></i><b>2.4.3</b> Lab activity 3: More correlations</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="week-11-correlation.html"><a href="week-11-correlation.html#answers"><i class="fa fa-check"></i><b>2.5</b> Answers</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -121,7 +128,8 @@
 <ol style="list-style-type: decimal">
 <li><p><a href="https://web.microsoftstream.com/video/6cff8539-a25a-43b7-9647-403f14539276"><strong>Theory</strong></a>
 Watch this part before you complete the reading and the pre-lab activities.</p></li>
-<li><p><a href="https://web.microsoftstream.com/video/974ed3d4-ec1c-45f4-b63a-a7ff86a8d12a"><strong>How to</strong></a> Watch this part either after the ‘Theory’ part of after you’ve completed the pre-lab activities 1 to 3. Definitely watch it before you come to your lab session.</p></li>
+<li><p><a href="https://web.microsoftstream.com/video/974ed3d4-ec1c-45f4-b63a-a7ff86a8d12a"><strong>How to</strong></a>
+Watch this part either after the ‘Theory’ part of after you’ve completed the pre-lab activities 1 to 3. Definitely watch it before you come to your lab session.</p></li>
 </ol>
 </div>
 <div id="reading" class="section level2" number="2.2">
@@ -150,7 +158,7 @@ Also, try setting the correlation to r = .5 and then moving a single dot to see 
 <p>Anscombe (1973) showed that four sets of bivariate data (X, Y) that have the exact same means, medians, and relationships can look very different when plotted. You can read more about this <a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet"><strong>here</strong></a>.</p>
 <p>All in this is a clear example of why you should visualise your data and not to rely on just the numbers.</p>
 </div>
-<div id="pre-lab-activity-4-getting-ready-for-the-lab-class" class="section level3" number="2.3.4">
+<div id="prelab_gettingReady" class="section level3" number="2.3.4">
 <h3><span class="header-section-number">2.3.4</span> Pre-lab activity 4: Getting ready for the lab class</h3>
 <div id="remind-yourself-of-the-basics-of-how-to-work-with-rstudio." class="section level4" number="2.3.4.1">
 <h4><span class="header-section-number">2.3.4.1</span> Remind yourself of the basics of how to work with RStudio.</h4>
@@ -167,10 +175,118 @@ Also, try setting the correlation to r = .5 and then moving a single dot to see 
 </div>
 <div id="get-your-files-ready" class="section level4" number="2.3.4.3">
 <h4><span class="header-section-number">2.3.4.3</span> Get your files ready</h4>
-<p>Files to download for the lab activities as well as the lab activities themselves will be added later this week.</p>
+<p>Download the <a href="files/week11/week11_forStudents.zip">week11.zip</a> file and upload it into the new folder in RStudio Server you created at the previous step. If you need them, <a href="https://tombeesley.github.io/PSYC121_2021-22/week-2-descriptive-statistics-in-r-studio.html#uploading_zip">here are the instructions</a> from Week 2 of PSYC121.</p>
+</div>
+</div>
+</div>
+<div id="lab-activities" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Lab activities</h2>
+<p>In this lab, you’ll gain understanding of and practice with:</p>
+<ul>
+<li>constructing and interpreting scatterplots</li>
+<li>running correlation analysis and interpret the results</li>
+<li>reporting the results in APA format</li>
+<li>constructing a correlation matrix in APA format</li>
+<li>when and why to apply correlation analysis to answers questions in psychological science</li>
+</ul>
+<div id="lab-activity-1-interpreting-correlation" class="section level3" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Lab activity 1: Interpreting correlation</h3>
+<div id="question-1" class="section level4" number="2.4.1.1">
+<h4><span class="header-section-number">2.4.1.1</span> Question 1</h4>
+<p>Below are scatterplots that show the relationship between ‘how much you know about correlation and how attractive you appear to members of the opposite (&amp;/or same) sex’.
+Choose the type of correlation (strength and direction) displayed in each graph using one of the following:</p>
+<ul>
+<li>Perfect positive correlation</li>
+<li>Perfect negative correlation</li>
+<li>Strong positive correlation</li>
+<li>Strong negative correlation</li>
+<li>Moderate positive correlation</li>
+<li>Moderate negative correlation</li>
+<li>Null correlation</li>
+</ul>
+<p><strong>Figure A</strong>
+<img src="files/week11/lab_act1_a.png" />
+<strong>Figure B</strong>
+<img src="files/week11/lab_act1_b.png" />
+<strong>Figure C</strong>
+<img src="files/week11/lab_act1_c.png" />
+<strong>Figure D</strong>
+<img src="files/week11/lab_act1_d.png" /></p>
+</div>
+<div id="question-2" class="section level4" number="2.4.1.2">
+<h4><span class="header-section-number">2.4.1.2</span> Question 2</h4>
+<p>Suppose it was observed that there is a correlation of r = -.81 between a driver’s age and the cost of car insurance. This correlation would mean that, in general, older people pay more for car insurance.</p>
+<p><strong>TRUE or FALSE? Explain why.</strong></p>
+<p><em>Note: explain your chosen answer based on the statistic given, not on why you think the correlation may or may note make ‘logical’ sense</em>).</p>
+</div>
+<div id="question-3" class="section level4" number="2.4.1.3">
+<h4><span class="header-section-number">2.4.1.3</span> Question 3</h4>
+<p>Suppose that there is a correlation of r = .87 between the length of time a person is in prison and the amount of aggression the person displays on a psychological inventory administered at release. This means that spending a longer amount of time in prison <em>causes</em> people to become more aggressive.</p>
+<p><strong>TRUE or FALSE? Explain why.</strong></p>
+</div>
+<div id="question-4" class="section level4" number="2.4.1.4">
+<h4><span class="header-section-number">2.4.1.4</span> Question 4</h4>
+<p>A significant correlation was found between having great hair and performance in correlation labs. The correlation coefficient was .7. How much variance in correlation lab performance can the ‘greatness’ of your hair explain?</p>
+<ul>
+<li>51%</li>
+<li>70%</li>
+<li>49%</li>
+<li>30%</li>
+<li>Who cares I’ve got great hair.</li>
+</ul>
+<p>What was the reason for your answer?</p>
+<p>What is this ‘new coefficient’ called?</p>
+</div>
+</div>
+<div id="lab-activity-2-visualising-calculating-and-reporting-correlations" class="section level3" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> Lab activity 2: Visualising, calculating and reporting correlations</h3>
+<p>Going back to the data discussed in Chapter 11 of Miller &amp; Haden, you’ll remember it contains data from 25 8-year-old children on:</p>
+<ul>
+<li>a standardised test of reading ability (Abil)</li>
+<li>intelligence (IQ)</li>
+<li>the number of minutes per week spent reading in the home (Home)</li>
+<li>and the number of minutes per week spent watching TV (TV)</li>
+</ul>
+<p>In the video on ‘How to conduct correlation analysis using R’ we looked at the correlation between reading ability and intelligence. Now, let’s look at the correlation between number of minutes per week spent reading in the home and watching TV.</p>
+<p>The folder you were asked to download under ‘Pre-lab activity 4: Getting ready for the lab class’ contains the datafile (“MillerHadenData.csv”) as well as the R-script from the ‘How to …’ video (122_wk11_howtoExample.R) that you can use here and adapt.</p>
+<ol style="list-style-type: decimal">
+<li><p>Load the ‘broom’ and the ‘tidyverse’ libraries by running the first two lines of code.</p></li>
+<li><p>Read in the data. You should now see an object with 25 observations and 5 variables in the ‘Environment’. Click on it to view it.</p></li>
+<li><p>Construct a scatterplot of the relationship between ‘Home’ and ‘TV’.</p></li>
+<li><p>What can you tell from the scatterplot about the direction of the relationship?</p></li>
+<li><p>Conduct the correlation analysis.</p></li>
+<li><p>What is the correlation coefficient (Pearson’s r)?</p></li>
+<li><p>What is the p value?</p></li>
+<li><p>Is the correlation significant at the p &lt; .05 level?</p></li>
+<li><p>What are the degrees of freedom you need to report?</p></li>
+<li><p>How much variance in ‘time spent reading’ can be accounted for by ‘time spent watching TV’? (Hint: you can use the Console in RStudio as a calculator.)</p></li>
+<li><p>Write a few sentences in which you report this result, following APA guidelines.</p></li>
+</ol>
+</div>
+<div id="lab-activity-3-more-correlations" class="section level3" number="2.4.3">
+<h3><span class="header-section-number">2.4.3</span> Lab activity 3: More correlations</h3>
+<p>Researchers were interested in the relationship between hazardous alcohol use and impulsivity (making unplanned, rapid decisions without thinking or ‘acting on a whim’). To investigate the relationship, 20 participants completed both the alcohol use disorder identification test (AUDIT; Saunders, Aasland, Babor, de la Fuente, &amp; Grant, 1993) and the Barratt’s Impulsiveness Scale (BIS-11) (Patton, Stanford, &amp; Barratt, 1995). The datafile (“alcoholUse_Impulsivity.csv”) is in the folder you were asked to download under ‘Pre-lab activity 4: Getting ready for the lab class’. Again, the R-script from the ‘How to …’ video (122_wk11_howtoExample.R) is useful here.</p>
+<ol style="list-style-type: decimal">
+<li><p>Load the ‘broom’ and the ‘tidyverse’ libraries by running the first two lines of code.</p></li>
+<li><p>Read in the data. You should now see an object containing the data in the ‘Environment’. How many variables does it have?</p></li>
+<li><p>Construct a scatterplot of the relationship between ‘Hazardous Alcohol Use’ and ‘Impulsivity’.</p></li>
+<li><p>What can you tell from the scatterplot about the direction of the relationship?</p></li>
+<li><p>Conduct the correlation analysis.</p></li>
+<li><p>What is the correlation coefficient (Pearson’s r)?</p></li>
+<li><p>What is the p value?</p></li>
+<li><p>Is the correlation significant at the p &lt; .05 level?</p></li>
+<li><p>What are the degrees of freedom you need to report?</p></li>
+<li><p>How much variance in ‘impulsivity’ can be accounted for by ‘hazardous alcohol use’? (Hint: you can use the Console in RStudio as a calculator.)</p></li>
+<li><p>Construct a correlation matrix to display the correlation coefficient in a table.</p></li>
+<li><p>Give three logically possible directions of causality, indicating for each direction whether it is a plausible explanation in light of the variables involved (and why). No, this is not a trick question -—I know that correlation does not infer causation, but think critically! New studies/ideas are constructed by thinking what the previous study doesn’t tell us about what could be happening with the variables of interest.</p></li>
+</ol>
+</div>
+</div>
+<div id="answers" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Answers</h2>
+<p>When you have completed all of the lab content, you may want to check your answers with our completed version of the script for this week. <strong>Remember</strong>, looking at this script (studying/revising it) does not replace the process of working through the lab activities, trying them out for yourself, getting stuck, asking questions, finding solutions, adding your own comments, etc. <strong>Actively engaging</strong> with the material is the way to learn these analysis skills, not by looking at someone else’s completed code…</p>
+<p>The answers to the questions and the script containing the code will be available after the final lab session has taken place.</p>
 
-</div>
-</div>
 </div>
 </div>
             </section>

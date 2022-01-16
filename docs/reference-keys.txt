@@ -7,7 +7,16 @@ pre-lab-activities
 pre-lab-activity-1-visualing-correlations
 pre-lab-activity-2-guess-the-correlation
 pre-lab-activity-3-anscombes-quartet
-pre-lab-activity-4-getting-ready-for-the-lab-class
+prelab_gettingReady
 remind-yourself-of-the-basics-of-how-to-work-with-rstudio.
 create-a-folder-and-a-project-for-week-11.
 get-your-files-ready
+lab-activities
+lab-activity-1-interpreting-correlation
+question-1
+question-2
+question-3
+question-4
+lab-activity-2-visualising-calculating-and-reporting-correlations
+lab-activity-3-more-correlations
+answers
