@@ -22,7 +22,7 @@ lab-activity-3-more-correlations
 answers
 lab-activity-1-interpreting-correlation-1
 lab-activity-2-constructing-scatterplots-and-calculating-correlations
-lab-activity-3-hazardous-alcohol-use-and-impulsivity
+lab-activity-3-more-correlations-1
 week-12-correlation-2
 lectures-1
 reading-1
