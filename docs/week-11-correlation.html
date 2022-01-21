@@ -94,7 +94,12 @@
 <li class="chapter" data-level="2.4.2" data-path="week-11-correlation.html"><a href="week-11-correlation.html#lab-activity-2-visualising-calculating-and-reporting-correlations"><i class="fa fa-check"></i><b>2.4.2</b> Lab activity 2: Visualising, calculating and reporting correlations</a></li>
 <li class="chapter" data-level="2.4.3" data-path="week-11-correlation.html"><a href="week-11-correlation.html#lab-activity-3-more-correlations"><i class="fa fa-check"></i><b>2.4.3</b> Lab activity 3: More correlations</a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="week-11-correlation.html"><a href="week-11-correlation.html#answers"><i class="fa fa-check"></i><b>2.5</b> Answers</a></li>
+<li class="chapter" data-level="2.5" data-path="week-11-correlation.html"><a href="week-11-correlation.html#answers"><i class="fa fa-check"></i><b>2.5</b> Answers</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="week-11-correlation.html"><a href="week-11-correlation.html#lab-activity-1-interpreting-correlation-1"><i class="fa fa-check"></i><b>2.5.1</b> Lab activity 1: Interpreting correlation</a></li>
+<li class="chapter" data-level="2.5.2" data-path="week-11-correlation.html"><a href="week-11-correlation.html#lab-activity-2-constructing-scatterplots-and-calculating-correlations"><i class="fa fa-check"></i><b>2.5.2</b> Lab activity 2: Constructing scatterplots and calculating correlations</a></li>
+<li class="chapter" data-level="2.5.3" data-path="week-11-correlation.html"><a href="week-11-correlation.html#lab-activity-3-hazardous-alcohol-use-and-impulsivity"><i class="fa fa-check"></i><b>2.5.3</b> Lab activity 3: Hazardous alcohol use and impulsivity</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="week-12-correlation-2.html"><a href="week-12-correlation-2.html"><i class="fa fa-check"></i><b>3</b> Week 12: Correlation 2</a>
 <ul>
@@ -302,8 +307,75 @@ Choose the type of correlation (strength and direction) displayed in each graph 
 <div id="answers" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Answers</h2>
 <p>When you have completed all of the lab content, you may want to check your answers with our completed version of the script for this week. <strong>Remember</strong>, looking at this script (studying/revising it) does not replace the process of working through the lab activities, trying them out for yourself, getting stuck, asking questions, finding solutions, adding your own comments, etc. <strong>Actively engaging</strong> with the material is the way to learn these analysis skills, not by looking at someone else’s completed code…</p>
-<p>The answers to the questions and the script containing the code will be available after the final lab session has taken place.</p>
+<!-- The answers to the questions and the script containing the code will be available after the final lab session has taken place. -->
+<div id="lab-activity-1-interpreting-correlation-1" class="section level3" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> Lab activity 1: Interpreting correlation</h3>
+<ol style="list-style-type: decimal">
+<li>Scatterplots</li>
+</ol>
+<ul>
+<li><ol style="list-style-type: lower-alpha">
+<li>strong positive correlation</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-alpha">
+<li>null correlation</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: lower-alpha">
+<li>moderate positive correlation</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: lower-alpha">
+<li>perfect negative correlation</li>
+</ol></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><p>FALSE Explanation: The correlation coefficient is negative and therefore infers a negative correlation. As such, older people pay less for car insurance: as age increases, car insurance costs decrease.</p></li>
+<li><p>FALSE Explanation: This is a bit of trick question as it has the sneaky ‘cause’ word in. The correlation coefficient is a positive number, suggesting a positive relationship between length of time in prison and aggression. However, causation cannot be inferred from correlation and therefore we cannot know whether time spent in prison CAUSES aggression, and rather we suggest a relationship between the two that as length of time in prison increases, aggression increases.</p></li>
+<li><p>c 49% The ‘coefficient of determination’ or ‘R-squared’ tells us the proportion or variance in one variable that can be predicted if we know the other variable. We can determine this by squaring the <em>r</em>. Therefore, .7<sup>2</sup> = .49, <em>R<sup>2</sup></em> = .49.</p></li>
+</ol>
+</div>
+<div id="lab-activity-2-constructing-scatterplots-and-calculating-correlations" class="section level3" number="2.5.2">
+<h3><span class="header-section-number">2.5.2</span> Lab activity 2: Constructing scatterplots and calculating correlations</h3>
+<p>You can download the R-script that contains the code to complete lab activities 2 and 3 here: <a href="files/week11/122_wk_labActivities2_3.R"><strong>122_wk11_labActivities2_3.R</strong></a></p>
+<ol style="list-style-type: decimal">
+<li><p><em>See R script</em></p></li>
+<li><p><em>See R script</em></p></li>
+<li><p><em>See R script</em></p></li>
+<li><p>What can you tell from the scatterplot about the direction of the relationship? <strong>There is a negative association between ‘Home’ and ‘TV’. This means that the longer a child spends watching TV, the shorter they will read at home.</strong></p></li>
+<li><p>Conduct the correlation analysis. <em>See R script</em></p></li>
+<li><p>What is the correlation coefficient (Pearson’s r)? <strong><em>r</em> = -.65</strong></p></li>
+<li><p>What is the p value? <strong><em>p</em> &lt; .001</strong></p></li>
+<li><p>Is the correlation significant at the p &lt; .05 level? <strong>Yes, because the p-value is smaller than .005</strong></p></li>
+<li><p>What are the degrees of freedom you need to report? <strong>23</strong></p></li>
+<li><p>How much variance in ‘time spent reading’ can be accounted for by ‘time spent watching TV’? <strong>42%</strong></p></li>
+<li><p>Write a few sentences in which you report this result, following APA guidelines. <strong>Something along the lines of: A Pearson’s correlation coefficient was used to assess the relationship between time spent reading at home and time spent watching TV at home. There was a significant negative correlation, <em>r</em>(23) = -.65, <em>p</em> &lt; .001. As time spent watching TV at home increased, time spent reading at home decreased.</strong></p></li>
+</ol>
+</div>
+<div id="lab-activity-3-hazardous-alcohol-use-and-impulsivity" class="section level3" number="2.5.3">
+<h3><span class="header-section-number">2.5.3</span> Lab activity 3: Hazardous alcohol use and impulsivity</h3>
+<ol style="list-style-type: decimal">
+<li><em>See R script</em></li>
+<li>How many variables does it have? <strong>3</strong></li>
+<li><em>See R script</em></li>
+<li>What can you tell from the scatterplot about the direction of the relationship? <strong>There is a positive association between ‘hazardous alcohol use’ and ‘impulsivity’. This means that as a participant’s score on ‘hazardous alcohol use’ goes up, their score on ‘impulsivity’ also goes up.</strong></li>
+<li><em>See R script</em></li>
+<li>What is the correlation coefficient (Pearson’s r)? <strong><em>r</em> = .54</strong></li>
+<li>What is the p value? <strong><em>p</em> = .014</strong></li>
+<li>Is the correlation significant at the p &lt; .05 level? <strong>Yes</strong></li>
+<li>What are the degrees of freedom you need to report? <strong>18</strong></li>
+<li>How much variance in ‘impulsivity’ can be accounted for by ‘hazardous alcohol use’? (Hint: you can use the Console in RStudio as a calculator.) <strong>29%</strong></li>
+<li>Construct a correlation matrix to display the correlation coefficient in a table.</li>
+</ol>
+<p><img src="files/week11/labAct3_correlationTable.png" />
+12. Give three logically possible directions of causality, indicating for each direction whether it is a plausible explanation in light of the variables involved (and why). No, this is not a trick question -—I know that correlation does not infer causation, but think critically! New studies/ideas are constructed by thinking what the previous study doesn’t tell us about what could be happening with the variables of interest.</p>
+<p><strong>Just really looking for reasoning here.</strong></p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>Being more impulsive may make people consume more alcohol.</strong></li>
+<li><strong>Consuming more alcohol may make people more impulsive.</strong></li>
+<li><strong>An outgoing personality might influence both your level of impulsivity and you are more likely to be socialising in the pub and consuming alcohol. So the same ‘third factor’ may influence both our variables of interest.</strong></li>
+</ul>
 
+</div>
 </div>
 </div>
             </section>
