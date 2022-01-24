@@ -37,4 +37,14 @@ question-2-1
 question-3-1
 question-4-1
 lab-activity-2-attitudes-towards-vaping
+background
+step-0-clean-your-environment
+step-1-set-your-working-directory
+step-2-load-packages
+step-3-read-in-the-data
+step-4-data-wrangling
+step-5-calculating-descriptive-statistics
+step-6-check-the-assumptions
+step-7-conduct-a-correlation-analysis
+step-8-intercorrelations
 answers-1

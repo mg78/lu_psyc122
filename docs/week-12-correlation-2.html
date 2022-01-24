@@ -24,7 +24,7 @@
 <meta name="author" content="Margriet Groen and Rob Davies" />
 
 
-<meta name="date" content="2022-01-21" />
+<meta name="date" content="2022-01-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,6 +55,70 @@
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -235,13 +299,188 @@ d. a and b</p>
 </div>
 <div id="lab-activity-2-attitudes-towards-vaping" class="section level3" number="3.4.2">
 <h3><span class="header-section-number">3.4.2</span> Lab activity 2: Attitudes towards vaping</h3>
-<p>WILL BE ADDED EARLY NEXT WEEK</p>
+<p>Great work so far! Now we really want to see what you can do yourself. In this activity we’ll use real data on implicit and explicit attitudes towards vaping. You’ll need the data file <code>VapingData.csv</code> and the R-script <code>122_wk12_labAct2_template.R</code> that you downloaded when completing Pre-lab activity 2.</p>
+<div id="background" class="section level4" number="3.4.2.1">
+<h4><span class="header-section-number">3.4.2.1</span> Background</h4>
+<p><strong>Explicit attitudes</strong> were measured via a questionnaire where higher scores indicated a positive attitude towards vaping (<code>VapingQuestionaireScore</code>).
+<strong>Implicit attitudes</strong> were measured through an Implicit Association Test (IAT) using images of Vaping and Kitchen utensils and associating them with positive and negative words.</p>
+<p>The IAT works on the principal that associations that go together (that are congruent, e.g. warm and sun) should be quicker to respond to than associations that do not go together (that are incongruent, e.g. warm and ice). You can read up more on the procedure on <a href="https://nobaproject.com/modules/research-methods-in-social-psychology"><strong>the Noba Project</strong></a> which has a good description of the procedure under the section “Subtle/Nonsconscious Research Methods”.</p>
+<p>For this exercise, you need to know that “Block 3” in the experiment tested reaction times and accuracy towards congruent associations, pairing positive words with Kitchen utensils and negative words with Vaping. “Block 5” in the experiment tested reaction times and accuracy towards incongruent associations, pairing positive words with Vaping and negative words with Kitchen Utensils. As such, if reaction times were longer in Block 5 than in Block 3 then people are considered to hold the view that Vaping is negative (i.e. congruent associations are quicker than incongruent associations). However, if reaction times were quicker in Block 5 than in Block 3 then people are considered to hold the view that Vaping is positive (i.e. incongruent associations were quicker than congruent associations). The difference between reaction times in Block5 and Block3 is called the participants’ IAT score.</p>
+</div>
+<div id="step-0-clean-your-environment" class="section level4" number="3.4.2.2">
+<h4><span class="header-section-number">3.4.2.2</span> Step 0: Clean your environment</h4>
+<p>Before you do anything else, when starting a new analysis, it is a good idea to empty the R environment. This prevents objects and variables from previous analyses interfering with the current one. You can do this by clicking on the broom icon at the top of the environment window, or you can use the code below.</p>
+<blockquote>
+<p><strong>TASK</strong>: Use the code snippet below to clear the environment. <strong>TIP</strong>: If you hover your mouse over the box that includes the code snippet, a ‘copy to clipboard’ icon will appear in the top right corner of the box. Click that to copy the code. Now you can easily paste it into your script.
+<img src="files/week12/copy.png" /></p>
+</blockquote>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="week-12-correlation-2.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())                            </span></code></pre></div>
+</div>
+<div id="step-1-set-your-working-directory" class="section level4" number="3.4.2.3">
+<h4><span class="header-section-number">3.4.2.3</span> Step 1: Set your working directory</h4>
+<p>Now, make sure your working directory is set to the folder in which you have stored the data file (<code>VapingData.csv</code>).</p>
+<blockquote>
+<p><strong>TASK</strong>: Use the code snippet below to check what you working directory is currently set to. This is the folder that R will use to look for files. Is the file path that is written to the Console after you run the code snippet the one that contains the data file? You can check by nativating to the path you can see in the Console in the ‘Files’ pane on the right. Does it contain the data file (‘VapingData.csv’)?</p>
+</blockquote>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="week-12-correlation-2.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
+<p>If your working directory is not set to the folder that contains the data file, navigate to folder that contains the data file in the ‘Files’ pane, click ‘More’ and then on ‘Set as working directory’.</p>
+<p><img src="files/week12/more_workingDirectory.png" /></p>
+</div>
+<div id="step-2-load-packages" class="section level4" number="3.4.2.4">
+<h4><span class="header-section-number">3.4.2.4</span> Step 2: Load packages</h4>
+<p>Before we can get started we need to tell R which libraries to use. For this analysis we’ll need <code>broom</code>, <code>car</code>, <code>Hmisc</code>, <code>lsr</code> and <code>tidyverse</code>.</p>
+<blockquote>
+<p><strong>TASK</strong>: Load the relevant libraries. <strong>HINT</strong>: Use the <code>library()</code> function.</p>
+</blockquote>
+</div>
+<div id="step-3-read-in-the-data" class="section level4" number="3.4.2.5">
+<h4><span class="header-section-number">3.4.2.5</span> Step 3: Read in the data</h4>
+<p>The data file we’ll be working with is <code>VapingData.csv</code></p>
+<blockquote>
+<p><strong>TASK</strong>: Read in the data file (using the <code>read_csv()</code> function) and store it in an object called <code>dat</code>. Have a look at the layout of the data and familiarise yourself with it. You have 8 columns. Reaction times and Accuracy scores for Blocks 3 and 5
+as well as the Explicit Vaping Questionnaire scores, Sex and Age, for each participant.</p>
+</blockquote>
+<p><strong>QUESTION 1:</strong>
+For how many participants do we have data?</p>
+</div>
+<div id="step-4-data-wrangling" class="section level4" number="3.4.2.6">
+<h4><span class="header-section-number">3.4.2.6</span> Step 4: Data wrangling</h4>
+<p>The data are not in a shape yet that we can actually use for our analysis. We’ll have to do some ’data
+wrangling to knock them into shape. We need to take the following into account:</p>
+<ol style="list-style-type: decimal">
+<li><p>Accuracy was calculated as proportion and as such can’t go above 1.Participants entered their own data so some might have made a mistake. Remove participants who had an accuracy greater than 1 in either Block 3 or Block 5 as we are unclear on the accuracy of these values.</p></li>
+<li><p>We also only want participants who were paying attention so best remove anybody whose average accuracy score across Blocks 3 and 5 was less than 80%. Note - this value is arbitrary and if you wanted, in your own experiment, you could use a more relaxed or strict cut-off based on other studies or guidance. Note that these decisions should be set out at the start of your research as part of your pre-registration or as part of your Registered Report. Finally, in this instance, remember, the values are in proportions not percentages (so 80% will be .8).</p></li>
+<li><p>Now that we have removed data points that were the result of data entry mistakes or came participants who didn’t pay attention during the task, we create an IAT score for participants by subtracting Block 3 reaction times (RT) from Block 5 reaction times (IAT_BLOCK5_RT - IAT_BLOCK3_RT).</p></li>
+</ol>
+<blockquote>
+<p><strong>TASK</strong>: Look closely at each line of code below and check you understand what it does. Copy the code to your script and for each line add a comment to describe what it does.</p>
+</blockquote>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="week-12-correlation-2.html#cb3-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a href="week-12-correlation-2.html#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(IAT_BLOCK3_Acc <span class="sc">&lt;</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-3"><a href="week-12-correlation-2.html#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(IAT_BLOCK5_Acc <span class="sc">&lt;</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-4"><a href="week-12-correlation-2.html#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">IAT_ACC =</span> (IAT_BLOCK3_Acc <span class="sc">+</span> IAT_BLOCK5_Acc)<span class="sc">/</span><span class="dv">2</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-5"><a href="week-12-correlation-2.html#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(IAT_ACC <span class="sc">&gt;</span> .<span class="dv">8</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-6"><a href="week-12-correlation-2.html#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">IAT_RT =</span> IAT_BLOCK5_RT <span class="sc">-</span> IAT_BLOCK3_RT)</span></code></pre></div>
+<p><strong>QUESTION 2:</strong>
+For how many participants do we have data now that we have cleaned them up?</p>
+<p><strong>QUESTION 3:</strong>
+Use the information in the background description to understand how the scores relate to attitudes.
+What does a positive IAT_RT score reflect? What does a negative IAT_RT score reflect? What does a higher score on the ‘VapingQuestionnaireScore’ mean?</p>
+</div>
+<div id="step-5-calculating-descriptive-statistics" class="section level4" number="3.4.2.7">
+<h4><span class="header-section-number">3.4.2.7</span> Step 5: Calculating descriptive statistics</h4>
+<p>Now that we have the variables that we need and the data cleaned up, we will create a descriptives
+summary of the number of people, and the means for the IAT and Vaping Questionnaire Score.</p>
+<blockquote>
+<p><strong>TASK</strong>: Look closely at each line of code below and check you understand what it does. Copy the code to your script and for each line add a comment to describe what it does.</p>
+</blockquote>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="week-12-correlation-2.html#cb4-1" aria-hidden="true" tabindex="-1"></a>descriptives <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="week-12-correlation-2.html#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb4-3"><a href="week-12-correlation-2.html#cb4-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_IAT_ACC =</span> <span class="fu">mean</span>(IAT_ACC),</span>
+<span id="cb4-4"><a href="week-12-correlation-2.html#cb4-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_IAT_RT =</span> <span class="fu">mean</span>(IAT_RT),</span>
+<span id="cb4-5"><a href="week-12-correlation-2.html#cb4-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_VPQ =</span> <span class="fu">mean</span>(VapingQuestionnaireScore, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div>
+<p><strong>QUESTION 4:</strong>
+Why might these averages be useful? Why are averages not always useful in correlations?</p>
+</div>
+<div id="step-6-check-the-assumptions" class="section level4" number="3.4.2.8">
+<h4><span class="header-section-number">3.4.2.8</span> Step 6: Check the assumptions</h4>
+<p><strong>Variable types</strong></p>
+<p><strong>QUESTION 5:</strong>
+What are the variable types for the implicit (IAT_RT) and the explicit (VapingQuestionnaireScore) attitude variables?</p>
+<p><strong>Missing data</strong></p>
+<blockquote>
+<p><strong>TASK</strong>: Remove participants with missing data. <strong>HINT</strong>: Use the <code>filter()</code> function and the <code>is.na()</code> function</p>
+</blockquote>
+<p><strong>QUESTION 6:</strong>
+How many people had missing data?</p>
+<p><strong>Normality</strong></p>
+<blockquote>
+<p><strong>TASK</strong>: Create histograms and qq-plots for the <code>IAT_RT</code> and <code>VapingQuestionnaireScore</code> variables. <strong>HINT</strong>: Use the <code>ggplot()</code> function with <code>geom_histogram()</code> and use the <code>qqPlot()</code> function (note the capital P)</p>
+</blockquote>
+<p><strong>QUESTION 7:</strong>
+What do you conclude from the histograms and the qq-plots? Are the VapingQuestionnaireScore and the IAT_RT normally distributed?</p>
+<p><strong>Linearity and homoscedasticity</strong></p>
+<blockquote>
+<p><strong>TASK</strong>: Plot the relationship between IAT_RT and VapingQuestionnaireScore using a scatterplot and a line of best fit. <strong>HINT</strong>: For this you’ll need the <code>ggplot()</code> function together with <code>geom_point()</code> and <code>geom_smooth()</code>. Make sure to give your axes some sensible labels.</p>
+</blockquote>
+<p><strong>QUESTION 8:</strong>
+What do you conclude from the scatterplot in terms of the homoscedasticity of the data and the linearity, direction and strength of the relationship? What does the scatterplot tell you about possible issues (outliers, range restrictions)?</p>
+</div>
+<div id="step-7-conduct-a-correlation-analysis" class="section level4" number="3.4.2.9">
+<h4><span class="header-section-number">3.4.2.9</span> Step 7: Conduct a correlation analysis</h4>
+<p><strong>QUESTION 9:</strong>
+Do you need to calculate Pearson’s r or Spearman’s rho?</p>
+<blockquote>
+<p><strong>TASK</strong>: Conduct a correlation analysis. <strong>HINT</strong>: Use the <code>cor.test()</code> function. You may want to use the <code>pull()</code> and the <code>round()</code> functions to get the numbers out.</p>
+</blockquote>
+<p><strong>QUESTION 10:</strong>
+Can you write up the results including the r, df, p-value and an interpretation?</p>
+</div>
+<div id="step-8-intercorrelations" class="section level4" number="3.4.2.10">
+<h4><span class="header-section-number">3.4.2.10</span> Step 8: Intercorrelations</h4>
+<p>Finally, let’s check whether either implicit or explicit attitude is associated with age.</p>
+<p>First, let’s create a new data frame that only includes the relevant variables. Look closely at each line of code below and check you understand what it does. Don’t forget to copy the code below to your script and run it.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="week-12-correlation-2.html#cb5-1" aria-hidden="true" tabindex="-1"></a>dat_matrix <span class="ot">&lt;-</span> dat <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="week-12-correlation-2.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Age, IAT_RT, VapingQuestionnaireScore) <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="week-12-correlation-2.html#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(dat_matrix) <span class="co"># Make sure tell R that dat is a data frame</span></span></code></pre></div>
+<blockquote>
+<p><strong>TASK</strong>: Now, create a matrix of scatterplots. <strong>HINT</strong>: Use the <code>pairs()</code> function.</p>
+</blockquote>
+<p><strong>QUESTION 11:</strong>
+What do you conclude from the scatterplots?</p>
+<blockquote>
+<p><strong>TASK</strong>: Finally, conduct intercorrelation (multiple correlations). <strong>HINT</strong>: Use the <code>correlate()</code> function. Do you need Pearson’s <em>r</em> or Spearman’s <em>rho</em>? Have you adjusted for multiple comparisons?</p>
+</blockquote>
+<p><strong>QUESTION 12:</strong>
+What do you conclude from the results of the correlation analysis?</p>
+</div>
 </div>
 </div>
 <div id="answers-1" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> Answers</h2>
 <p>When you have completed all of the lab content, you may want to check your answers with our completed version of the script for this week. <strong>Remember</strong>, looking at this script (studying/revising it) does not replace the process of working through the lab activities, trying them out for yourself, getting stuck, asking questions, finding solutions, adding your own comments, etc. <strong>Actively engaging</strong> with the material is the way to learn these analysis skills, not by looking at someone else’s completed code…</p>
 <p>The answers to the questions and the script containing the code will be available after the final lab session has taken place.</p>
+<!-- ### Lab activity 1 -->
+<!-- 1. Correlation would be an appropriate form on analysis for researchers interested in the relationship between -->
+<!-- + a.   Dog (breed) and height (cm) of owner -->
+<!-- + b.   Speed of swimming (mph) and area of tank (cm) -->
+<!-- + c.   Number of cows sitting and rain fall (mm) -->
+<!-- + d.   Total llama saliva (ml) expelled and gender of visitors -->
+<!-- + e.   b and d -->
+<!-- + **f. b and c** -->
+<!-- **All variables in b anc c are continuous. Dog breed and gender are categorical.** -->
+<!-- 2. When would you use Spearman’s rho analysis instead of Pearson’s r? -->
+<!-- + a.   When there are clear outliers in the data -->
+<!-- + **b. When the data is not normally distributed** -->
+<!-- + c.   When the relationship between X and Y is curvilinear -->
+<!-- + d.   a and b -->
+<!-- 3. Using the histograms and qq-plots below, which of these variables satisfies the normality assumption? Explain your answers. **Vocabulary. Only for vocabulary does the histogram resemble a bell curve and do the data-points in the qq-plot fall within the dashed blue lines.** -->
+<!-- 4. Why should correlation analysis not be conducted on variables with a curvilinear relationship? **May be subject to a type 2 error  there actually is a relationship between variables yet we reject the null hypothesis. As the relationship is not linear, correlation analysis will not identify this.** -->
+<!-- ### Lab activity 2 -->
+<!-- You can download the R-script that contains the code to complete lab activity 2  here: [122_wk12_labAct2.R](files/week12/122_wk12_labAct2.R). -->
+<!-- 1. For how many participants do we have data? **There are 166 observations, so we have data for 166 participants. You can see this in the Environment window in the top right. This does not tell us whether any of these participants have any missing data.** -->
+<!-- 2. For how many participants do we have data now that we have cleaned them up? **104 participants** -->
+<!-- 3. Use the information in the background description to understand how the scores relate to attitudes. -->
+<!-- What does a positive IAT_RT score reflect? **People with a positive IAT_RT are considered to hold the implicit view that vaping is negative (i.e. congruent associations are quicker than incongruent associations)** -->
+<!-- What does a negative IAT_RT score reflect? **People with a negative IAT_RT are considered to hold the implicit view that vaping is positive (i.e. incongruent associations were quicker than congruent associations).** -->
+<!-- What does a higher score on the 'VapingQuestionnaireScore' mean? **Higher scores indicated a positive explicit attitude towards vaping.** -->
+<!-- 4. Why might these averages be useful? Why are averages not always useful in correlations? -->
+<!-- **It is always worth thinking about which averages are informative and which are not. Knowing the average explicit attitude towards vaping could well be informative. In contrast, if you are using an ordinal scale and people use the whole of the scale then the average may just tell you the middle of the scale you are using - which you already know and really isn't that informative. So it is always worth thinking about what your descriptives are calculating.** -->
+<!-- 5. What are the variable types for the implicit (IAT_RT) and the explicit (VapingQuestionnaireScore) attitude variables? -->
+<!-- **Both can be considered continuous variables and at least at interval level.** -->
+<!-- 6. How many people had missing data? **8. Before we removed participants with missing data, we had 104 observations, now we have 96. So there must have been 8 participants without a score on one or the other variable.** -->
+<!-- 7. What do you conclude from the histograms and the qq-plots? Are the VapingQuestionnaireScore and the IAT_RT normally distributed? -->
+<!-- **Yes. Both histograms resemble a normal distribution (bell curve) and the open circles in the qq-plots fall within the blue stripy lines.** -->
+<!-- 8. What do you conclude from the scatterplot in terms of the homoscedasticity of the data and the linearity, direction and strength of the relationship? What does the scatterplot tell you about possible issues (outliers, range restrictions)? -->
+<!-- **The data look like a cloud without a clear direction. This suggests the relationship might might be weak. In terms of linearity, the scatterplot doesn't suggest any curvilinear relationships. Variance seems quite constant, but there do seem to be few people with negative IAT_RT (Implicit attitude) scores, suggesting few people held the view that vaping is positive.** -->
+<!-- 9. Do you need to calculate Pearson's r or Spearman's rho? -->
+<!-- **Pearson's r because the data do meet the assumptions.** -->
+<!-- 10. Can you write up the results including the r, df, p-value and an interpretation? -->
+<!-- **Testing the hypothesis of a relationship between implicit and explicit attitudes towards vaping, a Pearson correlation found no significant relationship between IAT reaction times (implicit attitude) and answers on a Vaping Questionnaire (explicit attitude), *r*(94) = -.02, *p* = .822. Overall this suggests that there is no direct relationship between implicit and explicit attitudes with regard to vaping and as such our hypothesis was not supported; we cannot reject the null hypothesis.** -->
+<!-- 11. What do you conclude from the scatterplots? -->
+<!-- **The scatterplots with age suggest that age is highly skewed with only a few participants older than 25. For now, let's say we'll therefore calculate Spearman's rho, rather than Pearson's *r*. That is ok for now, but if you were analysing these data for a research project, you'd want to have a closer look at the age variable (think histogram, qq-plot, and think about either collecting more data from older participants or transforming the variable (more about that next year).** -->
+<!-- 12. What do you conclude from the results of the correlation analysis? -->
+<!-- **No significant correlation with age was found.** -->
 
 </div>
 </div>
