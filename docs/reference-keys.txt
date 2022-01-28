@@ -48,6 +48,8 @@ step-6-check-the-assumptions
 step-7-conduct-a-correlation-analysis
 step-8-intercorrelations
 answers-1
+lab-activity-1
+lab-activity-2
 week-13-the-linear-model
 lectures-2
 reading-2
