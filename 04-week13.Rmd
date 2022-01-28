@@ -1,0 +1,57 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+
+# Week 13: The linear model
+
+> Written by Margriet Groen (partly adapted from materials developed by the PsyTeachR team a the University of Glasgow)
+
+This week we will focus on the linear model and simple linear regression.
+
+## Lectures
+The lecture material for this week is presented in two parts:
+
+1. [**The linear model (~25 min)**](https://web.microsoftstream.com/video/5fecb3a3-3bfe-4a00-a2fe-d463baac4820) 
+
+2. [**How to build a linear model in R (~30 min)**](https://web.microsoftstream.com/video/06d5c162-4985-45b4-a41a-33b661bd516e) You can find the example script in this week's zip-folder (see under Pre-lab activity 3).
+
+## Reading
+The reading that accompanies the lectures this week is from [**the free textbook by Miller and Haden**](https://drive.google.com/file/d/0B1fyuTuvj3YoaFdUR3FZaXNuNXc/view).
+
+**Chapter 12** provides an accessible overview of simple regression.
+
+## Pre-lab activities
+After having watched the lectures and read the textbook chapter you’ll be in a good position to try these activities. Completing them before you attend your lab session will help you to consolidate your learning and help move through the lab activities more smoothly.
+
+### Pre-lab activity 1: Visualising the regression line
+
+Have a look at [**this visualisation of the regression line**](https://ryansafner.shinyapps.io/ols_estimation_by_min_sse/) by Ryan Safner.
+
+In this shiny app,  you see a randomly-generated set of data points (within specific parameters, to keep the graph scaled properly). You can choose a slope and intercept for the regression line by using the sliders. The graph also displays the residuals as dashed red lines. Moving the slope or the intercept too much causes the generated line to create much larger residuals. The shiny app also calculates the sum of squared errors (SSE) and the standard error of the regression (SER), which calculates the average size of the error (the red numbers). These numbers reflect how well the regression line fits the data, but you don’t need to worry about those for now.
+
+In the app he uses the equation Y = aX + b in which b is the intercept and a is the slope.
+
+This is slightly different from the equation you saw during the lecture. There we talked about Y = b0 + b1*X + e. Same equation, just different letters. So b0 in the lecture is equivalent to b in the app and b1 in the lecture is equivalent to a in the app.
+
+Pre-lab activity questions:
+
+1. Change the slider for the intercept. How does it change the regression line?
+2. Change the slider for the slope. How does it change the regression line?
+3. What happens to the residuals (the red dashed lines) when you change the slope and the intercept of the regression line?
+
+### Pre-lab activity 2: Data visualisation - practice with `ggplot2()`
+In this week's online tutorials, you will practise visualing data.
+
+If you’re ready to begin, go to the tutorial linked to below. There is no need to install or download anything. Each tutorial has everything you need to write and run R code, right in the tutorial.
+
+* [**Visualization basics**](https://rstudio.cloud/learn/primers/1.1) Practise the basics of how to create a graph, how to add variables and how to make different types of graphs.
+
+* [**Scatterplots**](https://rstudio.cloud/learn/primers/3.5) This tutorial revisits scatterplots. Along the way, you will learn to build multi-layer plots and to use new coordinate systems.
+
+### Pre-lab activity 3: Getting ready for the lab class
+
+#### Get your files ready
+Download the [122_week13_forStudents.zip](files/week13/122_week13_forStudents.zip) file and upload it into the new folder in RStudio Server you created (see week 12 Pre-lab activity 4 for instructions on how to do that).
+

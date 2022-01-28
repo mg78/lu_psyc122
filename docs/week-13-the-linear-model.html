@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Statistics for Psychologists - PSYC122</title>
+  <title>4 Week 13: The linear model | Statistics for Psychologists - PSYC122</title>
   <meta name="description" content="Course content for PSYC122 at Lancaster University" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Statistics for Psychologists - PSYC122" />
+  <meta property="og:title" content="4 Week 13: The linear model | Statistics for Psychologists - PSYC122" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="mg78/lu_psyc122" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Statistics for Psychologists - PSYC122" />
+  <meta name="twitter:title" content="4 Week 13: The linear model | Statistics for Psychologists - PSYC122" />
   
   <meta name="twitter:description" content="Course content for PSYC122 at Lancaster University" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="week-12-correlation-2.html"/>
 
-<link rel="next" href="week-11-correlation.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -212,18 +212,58 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Statistics for Psychologists - PSYC122</h1>
-<p class="author"><em>Margriet Groen and Rob Davies</em></p>
-<p class="date"><em>2022-01-28</em></p>
+<div id="week-13-the-linear-model" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Week 13: The linear model</h1>
+<blockquote>
+<p>Written by Margriet Groen (partly adapted from materials developed by the PsyTeachR team a the University of Glasgow)</p>
+</blockquote>
+<p>This week we will focus on the linear model and simple linear regression.</p>
+<div id="lectures-2" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Lectures</h2>
+<p>The lecture material for this week is presented in two parts:</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://web.microsoftstream.com/video/5fecb3a3-3bfe-4a00-a2fe-d463baac4820"><strong>The linear model (~25 min)</strong></a></p></li>
+<li><p><a href="https://web.microsoftstream.com/video/06d5c162-4985-45b4-a41a-33b661bd516e"><strong>How to build a linear model in R (~30 min)</strong></a> You can find the example script in this week’s zip-folder (see under Pre-lab activity 3).</p></li>
+</ol>
 </div>
-<div id="intro" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Intro</h1>
-<p>This is a collection of tuition material written for Psychology undergraduates at Lancaster University. At the moment the content represents the “lab materials” for the PSYC122 module in first year. As was the case for PSYC121, they feature tuition of programming with R, building on the skills you developed last term.</p>
-<div id="analysis-labs-and-pre-lab-work" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Analysis labs and ‘pre-lab work’</h2>
-<p>Some parts should be completed before you attend the lab session (watching lectures, reading chapters, pre-lab activities). All the links to the different materials and activities are also in the ‘to-do list’ for the relevant week on Moodle.</p>
+<div id="reading-2" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Reading</h2>
+<p>The reading that accompanies the lectures this week is from <a href="https://drive.google.com/file/d/0B1fyuTuvj3YoaFdUR3FZaXNuNXc/view"><strong>the free textbook by Miller and Haden</strong></a>.</p>
+<p><strong>Chapter 12</strong> provides an accessible overview of simple regression.</p>
+</div>
+<div id="pre-lab-activities-2" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Pre-lab activities</h2>
+<p>After having watched the lectures and read the textbook chapter you’ll be in a good position to try these activities. Completing them before you attend your lab session will help you to consolidate your learning and help move through the lab activities more smoothly.</p>
+<div id="pre-lab-activity-1-visualising-the-regression-line" class="section level3" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Pre-lab activity 1: Visualising the regression line</h3>
+<p>Have a look at <a href="https://ryansafner.shinyapps.io/ols_estimation_by_min_sse/"><strong>this visualisation of the regression line</strong></a> by Ryan Safner.</p>
+<p>In this shiny app, you see a randomly-generated set of data points (within specific parameters, to keep the graph scaled properly). You can choose a slope and intercept for the regression line by using the sliders. The graph also displays the residuals as dashed red lines. Moving the slope or the intercept too much causes the generated line to create much larger residuals. The shiny app also calculates the sum of squared errors (SSE) and the standard error of the regression (SER), which calculates the average size of the error (the red numbers). These numbers reflect how well the regression line fits the data, but you don’t need to worry about those for now.</p>
+<p>In the app he uses the equation Y = aX + b in which b is the intercept and a is the slope.</p>
+<p>This is slightly different from the equation you saw during the lecture. There we talked about Y = b0 + b1*X + e. Same equation, just different letters. So b0 in the lecture is equivalent to b in the app and b1 in the lecture is equivalent to a in the app.</p>
+<p>Pre-lab activity questions:</p>
+<ol style="list-style-type: decimal">
+<li>Change the slider for the intercept. How does it change the regression line?</li>
+<li>Change the slider for the slope. How does it change the regression line?</li>
+<li>What happens to the residuals (the red dashed lines) when you change the slope and the intercept of the regression line?</li>
+</ol>
+</div>
+<div id="pre-lab-activity-2-data-visualisation---practice-with-ggplot2" class="section level3" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Pre-lab activity 2: Data visualisation - practice with <code>ggplot2()</code></h3>
+<p>In this week’s online tutorials, you will practise visualing data.</p>
+<p>If you’re ready to begin, go to the tutorial linked to below. There is no need to install or download anything. Each tutorial has everything you need to write and run R code, right in the tutorial.</p>
+<ul>
+<li><p><a href="https://rstudio.cloud/learn/primers/1.1"><strong>Visualization basics</strong></a> Practise the basics of how to create a graph, how to add variables and how to make different types of graphs.</p></li>
+<li><p><a href="https://rstudio.cloud/learn/primers/3.5"><strong>Scatterplots</strong></a> This tutorial revisits scatterplots. Along the way, you will learn to build multi-layer plots and to use new coordinate systems.</p></li>
+</ul>
+</div>
+<div id="pre-lab-activity-3-getting-ready-for-the-lab-class" class="section level3" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Pre-lab activity 3: Getting ready for the lab class</h3>
+<div id="get-your-files-ready-2" class="section level4" number="4.3.3.1">
+<h4><span class="header-section-number">4.3.3.1</span> Get your files ready</h4>
+<p>Download the <a href="files/week13/122_week13_forStudents.zip">122_week13_forStudents.zip</a> file and upload it into the new folder in RStudio Server you created (see week 12 Pre-lab activity 4 for instructions on how to do that).</p>
 
+</div>
+</div>
 </div>
 </div>
             </section>
@@ -231,8 +271,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
+<a href="week-12-correlation-2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="week-11-correlation.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

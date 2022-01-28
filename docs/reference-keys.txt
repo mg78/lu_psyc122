@@ -48,3 +48,11 @@ step-6-check-the-assumptions
 step-7-conduct-a-correlation-analysis
 step-8-intercorrelations
 answers-1
+week-13-the-linear-model
+lectures-2
+reading-2
+pre-lab-activities-2
+pre-lab-activity-1-visualising-the-regression-line
+pre-lab-activity-2-data-visualisation---practice-with-ggplot2
+pre-lab-activity-3-getting-ready-for-the-lab-class
+get-your-files-ready-2

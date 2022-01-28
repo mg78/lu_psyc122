@@ -1,7 +1,7 @@
 ---
 title: "Statistics for Psychologists - PSYC122"
 author: "Margriet Groen and Rob Davies"
-date: "2022-01-24"
+date: "2022-01-28"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
