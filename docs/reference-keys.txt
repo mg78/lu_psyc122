@@ -58,3 +58,11 @@ pre-lab-activity-1-visualising-the-regression-line
 pre-lab-activity-2-data-visualisation---practice-with-ggplot2
 pre-lab-activity-3-getting-ready-for-the-lab-class
 get-your-files-ready-2
+lab-activities-2
+lab-activity-1-the-regression-line
+question-1-2
+question-2-2
+question-3-2
+lab-activity-2-statistics-anxiety-and-engagement-in-module-activities
+background-1
+answers-2
