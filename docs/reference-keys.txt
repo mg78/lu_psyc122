@@ -1,5 +1,11 @@
 intro
 analysis-labs-and-pre-lab-work
+step-by-step-guide-to-getting-ready
+logging-into-rstudio
+uploading-files
+loading-packages
+opening-a-script
+reading-in-the-data
 week-11-correlation
 lectures
 reading
@@ -66,3 +72,5 @@ question-3-2
 lab-activity-2-statistics-anxiety-and-engagement-in-module-activities
 background-1
 answers-2
+lab-activity-1-1
+lab-activity-2-1

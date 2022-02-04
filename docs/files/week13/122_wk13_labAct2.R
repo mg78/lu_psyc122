@@ -9,7 +9,6 @@ getwd()
 # Step 2: Load packages ---------------------------------------------------
 library(broom)
 library(car)
-library(pwr)  
 library(tidyverse)
 
 # Step 3: Read in the data ------------------------------------------------
