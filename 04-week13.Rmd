@@ -110,6 +110,10 @@ Our hypothesis was that greater anxiety would be reflected in lower engagement. 
 **QUESTION 1:**
 If our hypothesis is correct, what type of correlation (if any) should we observe between students’ mean anxiety levels and the variable `n_weeks`?
 
+Before we do anything else, let's load the libraries that we need for this analysis.
+
+> **TASK**: Load `broom`, `car` and `tidyverse`. **HINT**: Use `library()`.
+
 > **TASK**: Read in both files, have a look at the layout of the data and familiarise yourself with it. **HINT**You can use the `read_csv()` and the `head()` function.
 
 **QUESTION 2**
