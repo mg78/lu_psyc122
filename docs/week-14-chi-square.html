@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Statistics for Psychologists - PSYC122</title>
+  <title>6 Week 14: Chi-square | Statistics for Psychologists - PSYC122</title>
   <meta name="description" content="Course content for PSYC122 at Lancaster University" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Statistics for Psychologists - PSYC122" />
+  <meta property="og:title" content="6 Week 14: Chi-square | Statistics for Psychologists - PSYC122" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="mg78/lu_psyc122" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Statistics for Psychologists - PSYC122" />
+  <meta name="twitter:title" content="6 Week 14: Chi-square | Statistics for Psychologists - PSYC122" />
   
   <meta name="twitter:description" content="Course content for PSYC122 at Lancaster University" />
   
@@ -31,7 +31,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="week-13-the-linear-model.html"/>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -251,18 +251,89 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="week-14-chi-square" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Week 14: Chi-square</h1>
+<blockquote>
+<p>Written by Margriet Groen (partly adapted from materials developed by the PsyTeachR team a the University of Glasgow)</p>
+</blockquote>
+<p>This week we will focus on Chi-square as a measure of association between categorical variables.</p>
+<div id="lectures-3" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Lectures</h2>
+<p>The lecture material for this week is presented in two parts:</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://web.microsoftstream.com/video/bbf4a074-41b7-493e-b1d2-078fe9c442ab"><strong>Associations between categorical variables (~23 min)</strong></a></p></li>
+<li><p><a href="https://web.microsoftstream.com/video/3735ac4c-9ba4-4a88-9acd-f949ebbc14f6"><strong>How to do Chi-square in R (~19 min)</strong></a> You can find the example script in this week’s zip-folder (see under Pre-lab activity 3).</p></li>
+</ol>
+</div>
+<div id="reading-3" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Reading</h2>
+<p>The reading that accompanies the topic this week is <strong>Chapter 20: Chi-square</strong> from the following textbook: Greene, J. and D’Oliveira, M (2006). Learning to Use Statistical Tests in Psychology (3rd Edition). Maidenhead, UK: Open University Press.</p>
+<p>This text is available as an e-book in the Lancaster University library through <a href="https://onesearch.lancaster-university.uk/permalink/f/q4m1ia/44LAN_ALMA_DS51144300650001221"><strong>this link</strong></a>.</p>
+<p><strong>Chapter 20</strong> provides an accessible overview of Chi-square.</p>
+</div>
+<div id="pre-lab-activities-3" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Pre-lab activities</h2>
+<p>After having watched the lectures and read the textbook chapter you’ll be in a good position to try these activities. Completing them before you attend your lab session will help you to consolidate your learning and help move through the lab activities more smoothly.</p>
+<div id="pre-lab-activity-1-calculating-chi-square-by-hand-and-interpreting-the-results" class="section level3" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Pre-lab activity 1: Calculating Chi-square by hand and interpreting the results</h3>
+<p>Is there a relationship between the number of people who smoke and the number of people who drink? Please note that the question is the number of people (frequency) and not how much people drink/smoke. Alos not that these are fictitious data. You’ll need a table of critical values for Chi-square. This can be found in the ‘Week 14 – resources’ folder on Moodle.</p>
+<p><img src="files/week14/chisquare_dataLabAct1.png" />
+Pre-lab activity questions:</p>
+<ol style="list-style-type: decimal">
+<li>Complete the Pearson’s Chi-square test by hand using the data above and fill in the blanks:</li>
+</ol>
+<p><strong><span class="math inline">\(\chi 2\)</span> ( , <em>N</em> = ) = , <em>p</em></strong></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Can you reject the null hypothesis?</li>
+</ol>
+</div>
+<div id="pre-lab-activity-2-data-visualisation---practice-with-ggplot2-1" class="section level3" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Pre-lab activity 2: Data visualisation - practice with <code>ggplot2()</code></h3>
+<p>In this week’s online tutorials, you will practise creating bar chars, a device for visualising the distribution of categorical variables.</p>
+<p>If you’re ready to begin, go to the tutorial linked to below. There is no need to install or download anything. Each tutorial has everything you need to write and run R code, right in the tutorial.</p>
+<ul>
+<li><a href="https://rstudio.cloud/learn/primers/3.2"><strong>Bar Charts</strong></a> In this tutorial you will learn how to make and enhance bar charts with the <code>ggplot2</code> package.</li>
+</ul>
+</div>
+<div id="pre-lab-activity-3-getting-ready-for-the-lab-class-1" class="section level3" number="6.3.3">
+<h3><span class="header-section-number">6.3.3</span> Pre-lab activity 3: Getting ready for the lab class</h3>
+<div id="get-your-files-ready-3" class="section level4" number="6.3.3.1">
+<h4><span class="header-section-number">6.3.3.1</span> Get your files ready</h4>
+<p>Download the <a href="files/week14/122_week14_forStudents.zip">122_week14_forStudents.zip</a> file and upload it into the new folder in RStudio Server you created (see week 12 Pre-lab activity 4 for instructions on how to do that).</p>
+</div>
+</div>
+</div>
+<div id="lab-activities-3" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Lab activities</h2>
+<p>In this lab, you’ll gain understanding of and practice with:</p>
+<ul>
+<li>conducting Pearson’s Chi-square in R</li>
+<li>interpreting Pearson’s Chi-square in R</li>
+<li>reporting the results in APA format</li>
+<li>when and why to apply Pearson’s Chi-square to answer questions in psychological science</li>
+</ul>
+<div id="lab-activity-1-2" class="section level3" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Lab activity 1</h3>
+<p>TO FOLLOW EARLY NEXT WEEK</p>
+</div>
+<div id="lab-activity-2-2" class="section level3" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Lab activity 2</h3>
+<p>TO FOLLOW EARLY NEXT WEEK</p>
+</div>
+</div>
+<div id="answers-3" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> Answers</h2>
+<p>When you have completed all of the lab content, you may want to check your answers with our completed version of the script for this week. <strong>Remember</strong>, looking at this script (studying/revising it) does not replace the process of working through the lab activities, trying them out for yourself, getting stuck, asking questions, finding solutions, adding your own comments, etc. <strong>Actively engaging</strong> with the material is the way to learn these analysis skills, not by looking at someone else’s completed code…</p>
+<p>The answers to the questions and the script containing the code will be available after the final lab session has taken place.</p>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="week-13-the-linear-model.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>

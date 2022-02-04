@@ -74,3 +74,15 @@ background-1
 answers-2
 lab-activity-1-1
 lab-activity-2-1
+week-14-chi-square
+lectures-3
+reading-3
+pre-lab-activities-3
+pre-lab-activity-1-calculating-chi-square-by-hand-and-interpreting-the-results
+pre-lab-activity-2-data-visualisation---practice-with-ggplot2-1
+pre-lab-activity-3-getting-ready-for-the-lab-class-1
+get-your-files-ready-3
+lab-activities-3
+lab-activity-1-2
+lab-activity-2-2
+answers-3
