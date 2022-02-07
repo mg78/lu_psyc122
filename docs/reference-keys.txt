@@ -83,6 +83,12 @@ pre-lab-activity-2-data-visualisation---practice-with-ggplot2-1
 pre-lab-activity-3-getting-ready-for-the-lab-class-1
 get-your-files-ready-3
 lab-activities-3
-lab-activity-1-2
-lab-activity-2-2
+lab-activity-1-understanding-the-application-of-the-chi-square-test
+question-1-3
+question-2-3
+question-3-3
+question-4-2
+question-5
+question-6
+lab-activity-2-reminders-through-association
 answers-3
