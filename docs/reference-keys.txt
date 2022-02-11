@@ -92,3 +92,5 @@ question-5
 question-6
 lab-activity-2-reminders-through-association
 answers-3
+lab-activity-1-2
+lab-activity-2-2
