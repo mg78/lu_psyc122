@@ -25,7 +25,7 @@ The reading that accompanies the lectures this week and next week is from [**cha
 Rougly, **this week** we'll cover the material in sections 9.1 to 9.4, as well as sections 9.8 to 9.11 and section 9.15. **Next week,** we'll cover the material in sections 9.5 to 9.7, and sections 9.12 to 9.13. Even if a section is not mentioned here, all of chapter 9 is relevant.
 
 ## Pre-lab activities
-After having watched the lectures on correlation and read the textbook chapters you’ll be in a good position to try these activities. Completing them before you attend your lab session will help you to consolidate your learning and help move through the lab activities more smoothly.
+After having watched the lectures on correlation and read the textbook sections you’ll be in a good position to try these activities. Completing them before you attend your lab session will help you to consolidate your learning and help move through the lab activities more smoothly.
 
 ### Pre-lab activity 1: Visualing correlations
 Have a look at [**this visualisation of correlations**](https://rpsychologist.com/correlation/) by Kristoffer Magnusson.
@@ -50,7 +50,7 @@ All in this is a clear example of why you should visualise your data and not to 
 
 ### Pre-lab activity 4: Getting ready for the lab class {#prelab_gettingReady}
 #### Remind yourself of the basics of how to work with RStudio.
-You might want to re-watch some of the videos John and Tom provided in PSYC121:
+You might want to re-visit some of the materials that John and Tom provided in PSYC121:
 
 * [Basics of working with RStudio](https://tombeesley.github.io/PSYC121_2021-22/week-2-descriptive-statistics-in-r-studio.html#pre-lab-work)
 * [Video on how to upload a zip file and import data (3.5 mins)](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=646a4bd4-9b2e-46a1-b2ee-adc100ce507b)
