@@ -13,16 +13,16 @@ Today we will take a look at correlation as a measure of association between two
 ## Lectures
 The lecture material for this week is presented in two parts:
 
-1. [**Theory**](https://web.microsoftstream.com/video/6cff8539-a25a-43b7-9647-403f14539276) 
+1. [**Theory**](https://estream.lancaster.ac.uk/View.aspx?id=60756~5l~EskRm6Sjrg) 
 Watch this part before you complete the reading and the pre-lab activities.
 
-2. [**How to**](https://web.microsoftstream.com/video/974ed3d4-ec1c-45f4-b63a-a7ff86a8d12a)
+2. [**How to**](https://estream.lancaster.ac.uk/View.aspx?id=60871~5j~C5GPS8vDwl)
 Watch this part either after the 'Theory' part of after you've completed the pre-lab activities 1 to 3. Definitely watch it before you come to your lab session.
 
 ## Reading
-The reading that accompanies the lectures this week and next week is from [**the free textbook by Miller and Haden**](https://drive.google.com/file/d/0B1fyuTuvj3YoaFdUR3FZaXNuNXc/view).
+The reading that accompanies the lectures this week and next week is from [**chapter 9 of the core text by Howell (2017)**](https://onesearch.lancaster-university.uk/permalink/f/cssk39/44LAN_ALMA_DS51180136050001221). Please note that I mention an alternative textbook in the lectures. The content is highly similar, but this year, we've decided to use Howell (2017) as the core text for PSYC121 and PSYC122. So no need to look at the book by Miller and Haden.
 
-**Chapter 10** gives you a brief overview of what correlation and regression are. **Chapter 11** introduces correlation in more detail. Both chapters are really short but provide a good basis to understanding correlational analysis. Please note, in Chapter 10 you might encounter some terminology that is unfamiliar to you. It talks about ANOVA, which means Analysis of Variance and about GLM, which means General Linear Model. Having a quick look at Chapter 1 of Miller and Haden also helps with that.
+Rougly, **this week** we'll cover the material in sections 9.1 to 9.4, as well as sections 9.8 to 9.11 and section 9.15. **Next week,** we'll cover the material in sections 9.5 to 9.7, and sections 9.12 to 9.13. Even if a section is not mentioned here, all of chapter 9 is relevant.
 
 ## Pre-lab activities
 After having watched the lectures on correlation and read the textbook chapters you’ll be in a good position to try these activities. Completing them before you attend your lab session will help you to consolidate your learning and help move through the lab activities more smoothly.
@@ -30,9 +30,10 @@ After having watched the lectures on correlation and read the textbook chapters 
 ### Pre-lab activity 1: Visualing correlations
 Have a look at [**this visualisation of correlations**](https://rpsychologist.com/correlation/) by Kristoffer Magnusson.
 
-After having read Miller and Haden Chapter 11, use this visualisation page to visually replicate the scatterplots in Figures 11.3 and 11.4 - use a sample of 100. After that, visually replicate the scatterplots in Figure 11.5. 
+After having read the relevant sections of Howell (2017) Chapter 9, use this visualisation page to visually replicate the scatterplots in Figures 9.1 and 9.2 - use a sample of 100. After that, visually replicate the scatterplots in Figure 9.3. 
 
 Each time you change the correlation, pay attention to the shared variance (the overlap between the two variables) and see how this changes with the changing level of relationship between the two variables. The greater the shared variance, the stronger the relationship.
+
 Also, try setting the correlation to r = .5 and then moving a single dot to see how one data point, a potential outlier, can change the stated correlation value between two variables.
 
 ### Pre-lab activity 2: Guess the correlation
@@ -51,6 +52,7 @@ All in this is a clear example of why you should visualise your data and not to 
 #### Remind yourself of the basics of how to work with RStudio.
 You might want to re-watch some of the videos John and Tom provided in PSYC121:
 
+* [Basics of working with RStudio](https://tombeesley.github.io/PSYC121_2021-22/week-2-descriptive-statistics-in-r-studio.html#pre-lab-work)
 * [Video on how to upload a zip file and import data (3.5 mins)](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=646a4bd4-9b2e-46a1-b2ee-adc100ce507b)
 * [Video on basic operations in RStudio (8 mins)](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=646a4bd4-9b2e-46a1-b2ee-adc100ce507b)
 * [Video on using scripts and using the console (3 mins)](https://web.microsoftstream.com/video/dcf3165c-86e7-4546-96d8-0ca6f56cbd7d)
@@ -187,9 +189,9 @@ Researchers were interested in the relationship between hazardous alcohol use an
 
 When you have completed all of the lab content, you may want to check your answers with our completed version of the script for this week. **Remember**, looking at this script (studying/revising it) does not replace the process of working through the lab activities, trying them out for yourself, getting stuck, asking questions, finding solutions, adding your own comments, etc. **Actively engaging** with the material is the way to learn these analysis skills, not by looking at someone else's completed code...
 
-<!-- The answers to the questions and the script containing the code will be available after the final lab session has taken place. -->
+The answers to the questions and the script containing the code will be available after the final lab session has taken place.
 
-### Lab activity 1: Interpreting correlation
+<!-- ### Lab activity 1: Interpreting correlation
 
 1. Scatterplots
 + a. strong positive correlation
@@ -249,4 +251,4 @@ You can download the R-script that contains the code to complete lab activities 
 
 * **Being more impulsive may make people consume more alcohol.**
 * **Consuming more alcohol may make people more impulsive.**
-* **An outgoing personality might influence both your level of impulsivity and you are more likely to be socialising in the pub and consuming alcohol. So the same ‘third factor’ may influence both our variables of interest.**
+* **An outgoing personality might influence both your level of impulsivity and you are more likely to be socialising in the pub and consuming alcohol. So the same ‘third factor’ may influence both our variables of interest.** -->
