@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Statistics for Psychologists - PSYC122</title>
+  <meta name="description" content="Course content for PSYC122 at Lancaster University" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Statistics for Psychologists - PSYC122" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Course content for PSYC122 at Lancaster University" />
+  <meta name="github-repo" content="mg78/lu_psyc122" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Statistics for Psychologists - PSYC122" />
+  
+  <meta name="twitter:description" content="Course content for PSYC122 at Lancaster University" />
+  
+
+<meta name="author" content="Margriet Groen and Rob Davies" />
+
+
+<meta name="date" content="2023-01-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="week-11-correlation.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">PSYC122 - Statistics for Psychologists I</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#intro" id="toc-intro"><span class="toc-section-number">1</span> Intro</a>
+<ul>
+<li><a href="index.html#analysis-labs-and-pre-lab-work" id="toc-analysis-labs-and-pre-lab-work"><span class="toc-section-number">1.1</span> Analysis labs and ‘pre-lab work’</a></li>
+</ul></li>
+<li><a href="week-11-correlation.html#week-11-correlation" id="toc-week-11-correlation"><span class="toc-section-number">2</span> Week 11: Correlation</a>
+<ul>
+<li><a href="week-11-correlation.html#lectures" id="toc-lectures"><span class="toc-section-number">2.1</span> Lectures</a></li>
+<li><a href="week-11-correlation.html#reading" id="toc-reading"><span class="toc-section-number">2.2</span> Reading</a></li>
+<li><a href="week-11-correlation.html#pre-lab-activities" id="toc-pre-lab-activities"><span class="toc-section-number">2.3</span> Pre-lab activities</a>
+<ul>
+<li><a href="week-11-correlation.html#pre-lab-activity-1-visualing-correlations" id="toc-pre-lab-activity-1-visualing-correlations"><span class="toc-section-number">2.3.1</span> Pre-lab activity 1: Visualing correlations</a></li>
+<li><a href="week-11-correlation.html#pre-lab-activity-2-guess-the-correlation" id="toc-pre-lab-activity-2-guess-the-correlation"><span class="toc-section-number">2.3.2</span> Pre-lab activity 2: Guess the correlation</a></li>
+<li><a href="week-11-correlation.html#pre-lab-activity-3-anscombes-quartet" id="toc-pre-lab-activity-3-anscombes-quartet"><span class="toc-section-number">2.3.3</span> Pre-lab activity 3: Anscombe’s quartet</a></li>
+<li><a href="week-11-correlation.html#prelab_gettingReady" id="toc-prelab_gettingReady"><span class="toc-section-number">2.3.4</span> Pre-lab activity 4: Getting ready for the lab class</a></li>
+</ul></li>
+<li><a href="week-11-correlation.html#lab-activities" id="toc-lab-activities"><span class="toc-section-number">2.4</span> Lab activities</a>
+<ul>
+<li><a href="week-11-correlation.html#lab-activity-1-interpreting-correlation" id="toc-lab-activity-1-interpreting-correlation"><span class="toc-section-number">2.4.1</span> Lab activity 1: Interpreting correlation</a></li>
+<li><a href="week-11-correlation.html#lab-activity-2-visualising-calculating-and-reporting-correlations" id="toc-lab-activity-2-visualising-calculating-and-reporting-correlations"><span class="toc-section-number">2.4.2</span> Lab activity 2: Visualising, calculating and reporting correlations</a></li>
+<li><a href="week-11-correlation.html#lab-activity-3-more-correlations" id="toc-lab-activity-3-more-correlations"><span class="toc-section-number">2.4.3</span> Lab activity 3: More correlations</a></li>
+</ul></li>
+<li><a href="week-11-correlation.html#answers" id="toc-answers"><span class="toc-section-number">2.5</span> Answers</a>
+<ul>
+<li><a href="week-11-correlation.html#lab-activity-2-constructing-scatterplots-and-calculating-correlations" id="toc-lab-activity-2-constructing-scatterplots-and-calculating-correlations"><span class="toc-section-number">2.5.1</span> Lab activity 2: Constructing scatterplots and calculating correlations</a></li>
+<li><a href="week-11-correlation.html#lab-activity-3-more-correlations-1" id="toc-lab-activity-3-more-correlations-1"><span class="toc-section-number">2.5.2</span> Lab activity 3: More correlations</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistics for Psychologists - PSYC122</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Statistics for Psychologists - PSYC122</h1>
+<p class="author"><em>Margriet Groen and Rob Davies</em></p>
+<p class="date"><em>2023-01-12</em></p>
+</div>
+<div id="intro" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Intro</h1>
+<p>This is a collection of tuition material written for Psychology undergraduates at Lancaster University. At the moment the content represents the “lab materials” for the PSYC122 module in first year. As was the case for PSYC121, they feature tuition of programming with R, building on the skills you developed last term.</p>
+<div id="analysis-labs-and-pre-lab-work" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Analysis labs and ‘pre-lab work’</h2>
+<p>Some parts should be completed before you attend the lab session (watching lectures, reading chapters, pre-lab activities). All the links to the different materials and activities are also in the ‘to-do list’ for the relevant week on Moodle.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="week-11-correlation.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-start.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
