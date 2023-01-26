@@ -262,9 +262,9 @@ What do you conclude from the results of the correlation analysis?
 
 When you have completed all of the lab content, you may want to check your answers with our completed version of the script for this week. **Remember**, looking at this script (studying/revising it) does not replace the process of working through the lab activities, trying them out for yourself, getting stuck, asking questions, finding solutions, adding your own comments, etc. **Actively engaging** with the material is the way to learn these analysis skills, not by looking at someone else's completed code...
 
-The answers to the questions and the script containing the code will be available after the final lab session has taken place.
+<!--The answers to the questions and the script containing the code will be available after the final lab session has taken place.-->
 
-<!--### Lab activity 1
+### Lab activity 1
 1. Correlation would be an appropriate form on analysis for researchers interested in the relationship between
 
 + a.	Dog (breed) and height (cm) of owner
@@ -323,4 +323,4 @@ What does a higher score on the 'VapingQuestionnaireScore' mean? **Higher scores
 **The scatterplots with age suggest that age is highly skewed with only a few participants older than 25. For now, let's say we'll therefore calculate Spearman's rho, rather than Pearson's *r*. That is ok for now, but if you were analysing these data for a research project, you'd want to have a closer look at the age variable (think histogram, qq-plot, and think about either collecting more data from older participants or transforming the variable (more about that next year).**
 
 12. What do you conclude from the results of the correlation analysis?
-**No significant correlation with age was found.**-->
+**No significant correlation with age was found.**
