@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Statistics for Psychologists - PSYC122</title>
+  <title>5 Week 14: Chi-square | Statistics for Psychologists - PSYC122</title>
   <meta name="description" content="Course content for PSYC122 at Lancaster University" />
   <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Statistics for Psychologists - PSYC122" />
+  <meta property="og:title" content="5 Week 14: Chi-square | Statistics for Psychologists - PSYC122" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Course content for PSYC122 at Lancaster University" />
   <meta name="github-repo" content="mg78/lu_psyc122" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Statistics for Psychologists - PSYC122" />
+  <meta name="twitter:title" content="5 Week 14: Chi-square | Statistics for Psychologists - PSYC122" />
   
   <meta name="twitter:description" content="Course content for PSYC122 at Lancaster University" />
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="week-13-the-linear-model.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -177,18 +177,171 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="week-14-chi-square" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Week 14: Chi-square<a href="week-14-chi-square.html#week-14-chi-square" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<blockquote>
+<p>Written by Margriet Groen (partly adapted from materials developed by the PsyTeachR team a the University of Glasgow)</p>
+</blockquote>
+<p>This week we will focus on Chi-square as a measure of association between categorical variables.</p>
+<div id="lectures-3" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Lectures<a href="week-14-chi-square.html#lectures-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The lecture material for this week is presented in two parts:</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://estream.lancaster.ac.uk/View.aspx?id=61323~5c~UkDY6yWsnP"><strong>Associations between categorical variables (~23 min)</strong></a></p></li>
+<li><p><a href="https://estream.lancaster.ac.uk/View.aspx?id=61324~5d~uUTAHJgCLR"><strong>How to do Chi-square in R (~19 min)</strong></a> You can find the example script in this week’s zip-folder (see under Pre-lab activity 3).</p></li>
+</ol>
+</div>
+<div id="reading-3" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Reading<a href="week-14-chi-square.html#reading-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The reading that accompanies the lectures this week is <a href="https://onesearch.lancaster-university.uk/permalink/f/cssk39/44LAN_ALMA_DS51180136050001221"><strong>Chapter 19: Chi-square of the core text by Howell (2017)</strong></a>. Please note that I might mention an alternative textbook in the lectures. The content is highly similar, but this year, we’ve decided to use Howell (2017) as the core text for PSYC121 and PSYC122. So no need to look at the book by Greene &amp; D’Oliveira (2006).</p>
+</div>
+<div id="pre-lab-activities-3" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Pre-lab activities<a href="week-14-chi-square.html#pre-lab-activities-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After having watched the lectures and read the textbook chapter you’ll be in a good position to try these activities. Completing them before you attend your lab session will help you to consolidate your learning and help move through the lab activities more smoothly.</p>
+<div id="pre-lab-activity-1-calculating-chi-square-by-hand-and-interpreting-the-results" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Pre-lab activity 1: Calculating Chi-square by hand and interpreting the results<a href="week-14-chi-square.html#pre-lab-activity-1-calculating-chi-square-by-hand-and-interpreting-the-results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Is there a relationship between the number of people who smoke and the number of people who drink? Please note that the question is the number of people (frequency) and not how much people drink/smoke. Alos not that these are fictitious data. You’ll need a table of critical values for Chi-square. This can be found in the ‘Week 14 – resources’ folder on Moodle.</p>
+<p><img src="files/week14/chisquare_dataLabAct1.png" />
+Pre-lab activity questions:</p>
+<ol style="list-style-type: decimal">
+<li>Complete the Pearson’s Chi-square test by hand using the data above and fill in the blanks:</li>
+</ol>
+<p><strong><span class="math inline">\(\chi 2\)</span> ( , <em>N</em> = ) = , <em>p</em></strong></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Can you reject the null hypothesis?</li>
+</ol>
+</div>
+<div id="pre-lab-activity-2-data-visualisation---practice-with-ggplot2-1" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Pre-lab activity 2: Data visualisation - practice with <code>ggplot2()</code><a href="week-14-chi-square.html#pre-lab-activity-2-data-visualisation---practice-with-ggplot2-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In this week’s online tutorials, you will practise creating bar chars, a device for visualising the distribution of categorical variables.</p>
+<p>If you’re ready to begin, go to the tutorial linked to below. There is no need to install or download anything. Each tutorial has everything you need to write and run R code, right in the tutorial.</p>
+<ul>
+<li><a href="https://rstudio.cloud/learn/primers/3.2"><strong>Bar Charts</strong></a> In this tutorial you will learn how to make and enhance bar charts with the <code>ggplot2</code> package.</li>
+</ul>
+</div>
+<div id="pre-lab-activity-3-getting-ready-for-the-lab-class-1" class="section level3 hasAnchor" number="5.3.3">
+<h3><span class="header-section-number">5.3.3</span> Pre-lab activity 3: Getting ready for the lab class<a href="week-14-chi-square.html#pre-lab-activity-3-getting-ready-for-the-lab-class-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="get-your-files-ready-3" class="section level4 hasAnchor" number="5.3.3.1">
+<h4><span class="header-section-number">5.3.3.1</span> Get your files ready<a href="week-14-chi-square.html#get-your-files-ready-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Download the <a href="files/week14/122_week14_forStudents.zip">122_week14_forStudents.zip</a> file and upload it into the new folder in RStudio Server you created.</p>
+</div>
+</div>
+</div>
+<div id="lab-activities-3" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Lab activities<a href="week-14-chi-square.html#lab-activities-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this lab, you’ll gain understanding of and practice with:</p>
+<ul>
+<li>conducting Pearson’s Chi-square in R</li>
+<li>interpreting Pearson’s Chi-square in R</li>
+<li>reporting the results in APA format</li>
+<li>when and why to apply Pearson’s Chi-square to answer questions in psychological science</li>
+</ul>
+<div id="lab-activity-1-understanding-the-application-of-the-chi-square-test" class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> Lab activity 1: Understanding the application of the Chi-square test<a href="week-14-chi-square.html#lab-activity-1-understanding-the-application-of-the-chi-square-test" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="question-1-3" class="section level4 hasAnchor" number="5.4.1.1">
+<h4><span class="header-section-number">5.4.1.1</span> QUESTION 1<a href="week-14-chi-square.html#question-1-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>How does Pearson’s chi-square differ from Pearson’s correlation?</p>
+</div>
+<div id="question-2-3" class="section level4 hasAnchor" number="5.4.1.2">
+<h4><span class="header-section-number">5.4.1.2</span> QUESTION 2<a href="week-14-chi-square.html#question-2-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Chi-square test of independence would be appropriate when testing the following
+questions:</p>
+<ul>
+<li><ol style="list-style-type: lower-alpha">
+<li>What is the relationship between gender and soft drink preference? True or False?</li>
+</ol></li>
+<li>b.How do males and females compare in terms of wanting to be a psychologist when they leave school? True or False?</li>
+</ul>
+</div>
+<div id="question-3-3" class="section level4 hasAnchor" number="5.4.1.3">
+<h4><span class="header-section-number">5.4.1.3</span> QUESTION 3<a href="week-14-chi-square.html#question-3-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Write the chi-square formula below.</p>
+</div>
+<div id="question-4-2" class="section level4 hasAnchor" number="5.4.1.4">
+<h4><span class="header-section-number">5.4.1.4</span> QUESTION 4<a href="week-14-chi-square.html#question-4-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>What were your answers to the pre-lab activity 1 questions? Please compare them with other students at your table.</p>
+<p>+a. Complete the Pearson’s Chi-square test by hand using the data above and fill in the blanks:</p>
+<p><strong><span class="math inline">\(\chi 2\)</span> ( , <em>N</em> = ) = , <em>p</em></strong></p>
+<p>+b. Can you reject the null hypothesis?</p>
+</div>
+<div id="question-5" class="section level4 hasAnchor" number="5.4.1.5">
+<h4><span class="header-section-number">5.4.1.5</span> QUESTION 5<a href="week-14-chi-square.html#question-5" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Why is it recommended to opt for multiple 2 x 2 chi-squares instead of chi-squares larger than 2 x 2?</p>
+</div>
+<div id="question-6" class="section level4 hasAnchor" number="5.4.1.6">
+<h4><span class="header-section-number">5.4.1.6</span> QUESTION 6<a href="week-14-chi-square.html#question-6" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>How could you ‘modify’ the contingency table below for chi-square analysis to aid subsequent interpretation of the data/results?</p>
+<p><img src="files/week14/122_week14_labAc1_q6.png" /></p>
+</div>
+</div>
+<div id="lab-activity-2-reminders-through-association" class="section level3 hasAnchor" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> Lab activity 2: Reminders through association<a href="week-14-chi-square.html#lab-activity-2-reminders-through-association" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For this lab, we’re going to use data from <a href="https://journals.sagepub.com/stoken/default+domain/6XgDSfr6ZHSDs47tx5bu/full"><strong>Rogers, T. &amp; Milkman, K. L. (2016). Reminders through association. <em>Psychological Science, 27</em>, 973-986.</strong></a> You can read the full paper online but the short version is that the authors looked at how people remember to follow through with the intention of doing something.</p>
+<p>Although there are lots of potential reasons (e.g., some people may lack the self-control resources), Rogers and Milkman (2016) propose that some people fail to follow through simply because they forget about their good intentions. If this is the case, the authors argue, then having visual reminders to follow through on their intentions may help people remember to keep them. For example, a person may choose to put a sticker for their gym on their car window, so that every time they get in the car they remember to go to the gym.</p>
+<p>In Study 1 by Rogers and colleagues, participants took part in an unrelated experiment but at the start of the task they were asked to return a small stack of paper clips to the reception of the building at the end of the study and if they did so the researchers would donate $1 to a charity. They were then asked if they intended to do this. Those in the reminder-through-association (RTA) condition read “Thank you! To remind you to pick up a paper clip, an elephant statuette will be sitting on the counter as you collect your payment.” This message was followed by a picture of the elephant statuette. Those in the control condition simply read “Thank you!”.</p>
+<p>What we want to do is to run a chi-square analysis to determine whether those in the RTA condition were more likely to remember to return the paper-clips than those in the control condition. Open the <a href="files/week14/122_wk14_labAct2.R"><code>122_wk14_labAct2.R</code> script</a> in RStudio and work your way through it. All instructions, hints and questions are contained in the script.</p>
+</div>
+</div>
+<div id="answers-3" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Answers<a href="week-14-chi-square.html#answers-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When you have completed all of the lab content, you may want to check your answers with our completed version of the script for this week. <strong>Remember</strong>, looking at this script (studying/revising it) does not replace the process of working through the lab activities, trying them out for yourself, getting stuck, asking questions, finding solutions, adding your own comments, etc. <strong>Actively engaging</strong> with the material is the way to learn these analysis skills, not by looking at someone else’s completed code…</p>
+<p>The answers to the questions and the script containing the code will be available after the final lab session has taken place.</p>
+<!-- ### Lab activity 1
+
+1.  How does Pearson’s Chi-square differ from Pearson’s correlation? **Pearson’s Chi-square assesses whether there is a relationship between categorical (or nominal) variables. Pearson’s correlation assesses whether there is a relationship between continuous (or interval/ratio) variables.**
+
+2.  Chi-square test of independence would be appropriate when testing the following
+questions:
+
++ a.    What is the relationship between gender and soft drink preference? **True**
++ b.    How do males and females compare in terms of wanting to be a psychologist when they leave school? **True**
+
+3.  Write the chi-square formula below.
+![](files/week14/122_week14_chiSquareFormula.png)
+
+4.  What were your answers to the pre-lab activity 1 questions? Please compare them with other students at your table.
+
++ a.    Complete the Pearson’s chi-square test by hand using the data above and fill in the blanks:
+
+![](files/week14/chisquare_dataLabAct1_answer.png)
+
+**First determine expected frequencies:**
+**Smoke/drink: (70 x 65) / 110 = 41.36**
+**Smoke/don’t drink (70 x 45) / 110 = 28.63**
+**Don’t smoke/drink (40 x 65) / 110 = 23.63**
+**Don’t smoke/don’t drink (40 x 45) / 110 = 16.36**
+
+**Then calculate chi-square:**
+**Smoke/drink: (50-41.36)2 / 41.36 = 1.80**
+**Smoke/don’t drink: (20-28.63)2 / 28.63 = 2.60**
+**Don’t smoke/drink: (15-23.63)2 / 23.63 = 3.15**
+**Don’t smoke/don’t drink: (25-16.36)2 / 16.36 = 4.56**
+**1.80+2.60+3.15+4.56 = 12.11**
+
+**$\chi 2$ (1, *N* = 110) = 12.11, *p* < .001**
+
++ b.    Can you reject the null hypothesis? **Yes**
+
+5.  Why is it recommended to opt for multiple 2 x 2 chi-squares instead of chi-squares larger than 2 x 2? **It is easier to interpret and such a design requires a smaller sample size.**
+
+6.  How could you ‘modify’ the contingency table below for chi-square analysis to aid subsequent interpretation of the data/results?
+
+![](files/week14/122_week14_labAc1_q6.png)
+
+**By combining ‘interested’ and ‘somewhat interested’ or by partitioning (doing multiple 2 x 2 chi-squares, while using Bonferroni correction to account for running multiple tests**
+
+### Lab activity 2
+
+Please see the [`122_wk14_labAct2_withAnswers.R` script](files/week14/122_wk14_labAct2_withAnswers.R) for the relevant code and answers to questions. -->
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="week-13-the-linear-model.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>

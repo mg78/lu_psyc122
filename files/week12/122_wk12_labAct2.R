@@ -85,7 +85,7 @@ pvalue <- results %>%
 # Create a new data frame that only include the relevant variables
 dat_matrix <- dat %>%
   select(Age, IAT_RT, VapingQuestionnaireScore) %>%
-  as.data.frame(dat_matrix) # Make sure tell R that dat is a data frame
+  as.data.frame() # Make sure tell R that dat is a data frame
 
 # Create a matrix of scatterplots
 pairs(dat_matrix)
