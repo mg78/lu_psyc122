@@ -41,7 +41,7 @@ ggplot(joined, aes(x = mean_anxiety, y = n_weeks)) +
   theme_bw()
 
 # Step 8: Build the regression model -----------------------------------------------
-mod <- lm(n_weeks ~ mean_anxiety, data = joined)
+mod<- lm(n_weeks ~ mean_anxiety, data = joined)
 mod_summary <- summary(mod)
 mod_summary
 
